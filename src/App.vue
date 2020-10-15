@@ -7,12 +7,10 @@
 
 <style>
 
-
 </style>
 
 <script>
-
 export default {
-  name:"App"
+  name:"app"
 }
 </script>
