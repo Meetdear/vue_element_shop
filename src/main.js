@@ -31,8 +31,11 @@ import {
     Pagination,
     Dialog,
     Message,
-    MessageBox
-
+    MessageBox,
+    Tag,
+    Tree,
+    Select,
+    Option,
 } from "element-ui"
 // import { config } from 'vue/types/umd'
 
@@ -58,6 +61,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 
 // 表示把Message这个组件挂载到了vue的原型对象上
 //这样就可以通过this.来访问到这个组件了
