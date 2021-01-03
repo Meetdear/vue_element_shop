@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 导入全局样式表
 import './assets/fonts/iconfont.css'
 import "./assets/css/global.css"
+import TreeTable from 'vue-table-with-tree-grid'
 // 在页面中使用了就要在这里导入
 import {
     Container,
@@ -36,6 +37,7 @@ import {
     Tree,
     Select,
     Option,
+    Cascader
 } from "element-ui"
 // import { config } from 'vue/types/umd'
 
@@ -65,6 +67,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 // 表示把Message这个组件挂载到了vue的原型对象上
 //这样就可以通过this.来访问到这个组件了
@@ -82,7 +85,7 @@ axios.interceptors.request.use(config => {
     // 全局通过axios请求数据
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
-
+Vue.component('tree-table', TreeTable)
 new Vue({
     router,
     render: h => h(App)
